@@ -22,7 +22,7 @@ class TripsTableSeeder extends Seeder
             $newTrip->nation = 'nazione n ' .rand(1,200);
             $newTrip->city = 'Mantova';
             $newTrip->address = 'via della speranza n ' .rand(1,100);
-            $newTrip->number_people = 'numero massimo persone ' . rand(1,10);
+            $newTrip->number_people = rand(1,10);
             $newTrip->rooms = rand(1,20);
             $newTrip->type = 'appartamento';
             $newTrip->description = "lorem ipsum dolor sit amet";
