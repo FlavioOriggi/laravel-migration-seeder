@@ -14,3 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'TripController@index')->name('homepage');
+
+Route::get('/details/{id}', 'TripController@show')->name('dettagli');
+

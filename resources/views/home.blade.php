@@ -12,7 +12,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ $trip->nation}}</h5>
                         <p class="card-text">{{ $trip->description}}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="{{ route('dettagli', ['id' => $trip->id]) }}" class="btn btn-primary">Go somewhere</a>
                     </div>
             </div>
             

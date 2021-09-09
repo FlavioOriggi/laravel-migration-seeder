@@ -11,4 +11,10 @@ class TripController extends Controller
         $trips = Trip::paginate(5);
         return view('home', compact('trips'));
     }
+
+    public function show($key) {
+        $trips = Trip::where('id', $key)->first();
+        return view('dettaglio', compact('trip'));
+    }
 }
+
