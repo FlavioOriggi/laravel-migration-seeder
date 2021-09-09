@@ -8,7 +8,7 @@ use App\Trip;
 class TripController extends Controller
 {
     public function index(){
-        $trips = Trip::all();
+        $trips = Trip::paginate(5);
         return view('home', compact('trips'));
     }
 }
